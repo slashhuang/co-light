@@ -1,0 +1,23 @@
+{
+  "name": "co-light",
+  "version": "1.0.0",
+  "description": "a light weight co",
+  "main": "co.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slashhuang/co-light.git"
+  },
+  "keywords": [
+    "co",
+    "nodejs"
+  ],
+  "author": "slashhuang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slashhuang/co-light/issues"
+  },
+  "homepage": "https://github.com/slashhuang/co-light#readme"
+}
