@@ -18,5 +18,7 @@ module.exports = (gen)=>{
 		//启动generator
 		 let start = gen.next()['value'];
 		 Promise.resolve(start).then(resolve)
-	}).then(basePromise)
+	}).then(basePromise).catch((error)=>{
+		gen.throw('generator throw ------' + error.name + error.stack)	
+	});
 }

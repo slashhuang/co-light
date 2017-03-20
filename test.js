@@ -13,9 +13,9 @@ var p1 = (val)=>Promise.resolve({
 function* s(){
 	let y = yield p1('a');
 	console.log(y);
-	let q = yield p1('b');
+	let q = yield p1(y+d);
 	console.log(q);
-	return y + q
+	return y + 2+q
 };
 let gen = s();
 
@@ -27,4 +27,6 @@ let gen = s();
 co(gen).then((t)=>{
 	console.log('finally');
 	console.log(t)
+}).catch((err)=>{
+	console.log('err----',err)
 })
